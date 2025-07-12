@@ -36,3 +36,5 @@ samples, guidance on mobile development, and a full API reference.
 ### 🛒 Cart Screen
 
 ![Cart](screenshots/cart_screen.png)
+
+<img src="screenshots/product_screen.png" width="400"/>
