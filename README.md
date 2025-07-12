@@ -17,22 +17,22 @@ samples, guidance on mobile development, and a full API reference.
 
 ## 📸 Screenshots
 
-### 🏠 Signup Screen
+### 📝 Signup Screen
 
-![Home](screenshots/signup_screen.png)
+![Signup Screen](screenshots/signup_screen.png)
 
-### 🏠 Login Screen
+### 🔐 Login Screen
 
-![Home](screenshots/login_screen.png)
+![Login Screen](screenshots/login_screen.png)
 
-### 🏠 Products Screen
+### 🛍️ Products Screen
 
-![Home](screenshots/products_screen.png)
+![Products Screen](screenshots/products_screen.png)
 
-### 🏠 Product Screen
+### 📄 Product Detail Screen
 
-![Home](screenshots/product_screen.png)
+![Product Detail](screenshots/product_screen.png)
 
 ### 🛒 Cart Screen
 
-<img src="screenshots/cart.png" width="400"/>
+![Cart](screenshots/cart_screen.png)
