@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:todo_app/widgets/custom_text.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({super.key});
@@ -79,11 +80,23 @@ class _CartScreenState extends State<CartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Your Cart')),
+      appBar: AppBar(
+        title: CustomText(
+          title: "Your Carts",
+          fontWeight: FontWeight.bold,
+          fontSize: 17,
+        ),
+      ),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
           : cartItems.isEmpty
-          ? const Center(child: Text('Your cart is empty'))
+          ? const Center(
+              child: CustomText(
+                title: "Your Carts is empty",
+                fontWeight: FontWeight.bold,
+                fontSize: 15,
+              ),
+            )
           : ListView.builder(
               itemCount: cartItems.length,
               itemBuilder: (context, index) {

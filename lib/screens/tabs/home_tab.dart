@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/screens/product_screen.dart';
 import 'package:todo_app/services/api_service.dart';
+import 'package:todo_app/widgets/custom_text.dart';
 
 class HomeTab extends StatefulWidget {
   const HomeTab({super.key});
@@ -55,7 +56,11 @@ class _HomeTabState extends State<HomeTab> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Products'),
+        title: CustomText(
+          title: "Products",
+          fontWeight: FontWeight.normal,
+          fontSize: 20,
+        ),
         actions: [
           Stack(
             alignment: Alignment.topRight,

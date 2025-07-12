@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/widgets/custom_button.dart';
+import 'package:todo_app/widgets/custom_text.dart';
 import 'package:todo_app/widgets/custom_text_field.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -29,7 +30,14 @@ class _SignupScreenState extends State<SignupScreen> {
 
     // Simulate successful signup
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Account created successfully!')),
+      const SnackBar(
+        content: CustomText(
+          title: "Account created successfully!",
+          fontWeight: FontWeight.normal,
+          fontSize: 15,
+          color: Colors.white,
+        ),
+      ),
     );
 
     Navigator.pushReplacementNamed(context, '/dashboard');
@@ -50,9 +58,9 @@ class _SignupScreenState extends State<SignupScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const Text(
-                'Create Account',
-                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+              CustomText(
+                title: 'Create an account',
+                fontWeight: FontWeight.bold,
               ),
               const SizedBox(height: 24),
               CustomTextField(
@@ -60,7 +68,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 label: 'First Name',
                 icon: Icons.person,
               ),
-              const SizedBox(height : 12),
+              const SizedBox(height: 12),
               CustomTextField(
                 controller: lastNameController,
                 label: 'Last Name',
@@ -98,7 +106,11 @@ class _SignupScreenState extends State<SignupScreen> {
               const SizedBox(height: 16),
               TextButton(
                 onPressed: () => Navigator.pop(context),
-                child: const Text('Already have an account? Login'),
+                child: CustomText(
+                  title: "Already have an account? Login",
+                  fontWeight: FontWeight.normal,
+                  fontSize: 15,
+                ),
               ),
             ],
           ),
