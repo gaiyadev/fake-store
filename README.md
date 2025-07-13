@@ -19,7 +19,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ### 📝 Signup Screen
 
-![Signup Screen](/screenshots/signup_screen.png)
+![Signup Screen](screenshots/signup_screen.png)
 
 ### 🔐 Login Screen
 
